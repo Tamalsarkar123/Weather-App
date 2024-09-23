@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <!-- weather sreach -->
+        <form class="search">
+            <i class="fa-solid fa-magnifying-glass" style="color:#fff;"></i>
+            <input type="text" placeholder="search your city..."  class="city_search">
+        </form>
+
+        <div class="weather_data">
+            <h2 class="city_name"></h2>
+            <p class="weather_date_time"></p>
+            <div class="weather_info">
+                <div class="show"></div>
+                <div class="weather_icon" ></div>
+            </div>
+            <p class="temparature"></p>
+            <div class="max_min">
+                <p class="weather_max"></p>
+                <p class="weather_min"></p>
+            </div>
+        </div>
+        <div class="sub_data">
+            <div class="weather_details "><span class="span_icon
+                "><i class="fa-solid fa-temperature-three-quarters"></i></span><span class="f-cast"><p>Feels Like <br><span class="feels_like"></span></p></span></div>
+            <div class="weather_details"><span class="span_icon
+                "><img  class="humidity"   src="humidity.png" alt="""></span><span class="f-cast"><p>Humidity<br><span class="Humi"></span></p></span></div>
+            <div class="weather_details"><span class="span_icon
+                "><i class="fa-solid fa-wind"></i></span><span class="f-cast"><p>Wind<br><span class="wind_speed" ></span></p></span></div>
+            <div class="weather_details"><span class="span_icon
+                "><i class="fas fa-tachometer-alt"></i></span><span class="f-cast"><p>Pressure <br> <span class="pressure"></span></p></span></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
